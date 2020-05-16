@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Hola Amigos
 
-You can use the [editor on GitHub](https://github.com/brandimontoya/brandimontoya.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Welcome to my website. This is basically my ePortfolio which contains a description of my skillset and projects that I've completed before.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Software Design and Engineering
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Here I include a sample application which I had developed earlier to simulate the variety in human population. I used the object oriented paradigm for this. I have attached relevant code below.
 
 ```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### Data Structures and Algorithms
 
-### Jekyll Themes
+Here I include a sample application which I had developed earlier which is a warning system for fraudulent account activity. I used simple data structure like arrays and algos like merge sort. I have attached relevant code below.
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/brandimontoya/brandimontoya.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```markdown
 
-### Support or Contact
+```
+### Databases
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
