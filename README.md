@@ -1,6 +1,6 @@
 ## Hola Amigos
 
-Welcome to my website. This is basically my ePortfolio which contains a description of my skillset and projects that I've completed before.
+Welcome to my website. This is my ePortfolio for the 499 class, this contains a description of my skillset and projects that I've completed before.
 
 ### Software Design and Engineering
 
