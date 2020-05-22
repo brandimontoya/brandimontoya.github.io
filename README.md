@@ -12,7 +12,33 @@ class Male {
     int height;    
     int weight; 
     int age;
+    s
+## represents humans
+class Human {    
+  protected:      
+    int height;    
+    int weight; 
+    int age;
     string name; 
+    string profession;
+    string gender;
+   public:
+   	void seth(int h);
+   	void setw(int w);
+   	void seta(int a);
+   	void setn(string n);
+   	void setp(string p);
+	void setg(string g);
+};
+
+## class inherited from Human
+class Criminal: public Human {
+  protected:
+    string crime;
+ public:
+    setc(string c);
+};
+string name; 
     string profession;
    public:
    	void seth(string h);
