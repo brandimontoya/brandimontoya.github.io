@@ -87,40 +87,74 @@ Here I include a sample application which I had developed earlier which is a war
 
 ```markdown
 int main(){
+	//total days
 	int N;
 	cin>>N;
-	int A[N];
+
+	//trailing days
 	int k;
 	cin>>k;
 
+	//expenditure array
+	int expend[N];
+
 	for(int i=0;i<N;i++){
-		cin>>A[i];
+		cin>>expend[i];
 	}
 
-	for(int i=k;i<N;i++){
-		int a[k];
-		for(int j=0;j<k;j++){
-			a[j]=A[i-k+j];
-		}
-		mergesort(a, k);
+	//set to store the trailing expenditures
+	set <int, greater <int> > trail_expend; 
 
-		float med;
-		if(k%2==0){
-			med = (a[k/2 - 1] +a[k/2])/2;
+	for(int i=k;i<N;i++){
+		float median;
+
+		//this is where the set is initialized with the first k values
+		if(i==k){
+			for(int j=0;j<k;j++){
+				trail_expend.insert(expend[j]);
+			}
+			if(k%2==0){
+				auto itr = trail_expend.begin();
+				advance(itr,k/2-1);
+				median = (*itr + *(++itr))/2;
+			}
+			else{
+				auto itr = trail_expend.begin();
+				advance(itr,k/2);
+				median = *itr;
+			}
+			if(expend[i]>median){
+				cout<<"fraud";
+				break;
+			}
 		}
+		//the other indices where the same set is used but with an insertion and deletion
 		else{
-			med = a[k/2];
-		}
-		if(A[i]>med){
-			// cout<<med<<endl;
-			cout<<"index "<<i<<endl;
-			cout<<"fraud withdraw warning";
-			break;
+			//auto itr = trail_expend.find(expend[i-k-1]);
+			trail_expend.erase(expend[i-k-1]);
+			trail_expend.insert(expend[i-1]);
+
+			if(k%2==0){
+				auto itr = trail_expend.begin();
+				advance(itr,k/2-1);
+				median = (*itr + *(++itr))/2;
+			}
+			else{
+				auto itr = trail_expend.begin();
+				advance(itr,k/2);
+				median = *itr;
+			}
+			if(expend[i]>median){
+				cout<<"fraud";
+				break;
+			}
 		}
 	}
 
 	return 0;
 }
+
+
 ```
 ### Databases
 
