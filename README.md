@@ -37,9 +37,12 @@ class Criminal: public Human {
 
 
 
+```
 ### Data Structures and Algorithms
 
 Here I include a sample application which I had developed earlier which is a warning system for fraudulent account activity. I used simple data structure like arrays and algos like merge sort. I have attached some of the relevant code below.
+
+
 
 ```markdown
 int main(){
