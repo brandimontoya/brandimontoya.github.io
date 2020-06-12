@@ -6,6 +6,8 @@ Welcome to my website. This is my ePortfolio for the 499 class, this contains a 
 
 Here I include a sample application which I had developed earlier to simulate the variety in human population. I used the object oriented paradigm for this. I have attached some of the relevant code below.
 
+
+```markdown
 ## represents humans
 class Human {    
   protected:      
