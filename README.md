@@ -6,13 +6,6 @@ Welcome to my website. This is my ePortfolio for the 499 class, this contains a 
 
 Here I include a sample application which I had developed earlier to simulate the variety in human population. I used the object oriented paradigm for this. I have attached some of the relevant code below.
 
-```markdown
-class Male {    
-  private:      
-    int height;    
-    int weight; 
-    int age;
-    s
 ## represents humans
 class Human {    
   protected:      
@@ -38,48 +31,9 @@ class Criminal: public Human {
  public:
     setc(string c);
 };
-string name; 
-    string profession;
-   public:
-   	void seth(string h);
-   	void setw(string w);
-   	void seta(string a);
-   	void setn(string n);
-   	void setp(string p);
-};
 
-class Female {    
-  private:      
-    int height;    
-    int weight; 
-    int age;
-    string name; 
-    string profession;
-   public:
-   	void seth(string h);
-   	void setw(string w);
-   	void seta(string a);
-   	void setn(string n);
-   	void setp(string p);
-};
 
-class Criminal{    
-  private:      
-    int height;    
-    int weight; 
-    int age;
-    string name; 
-    string profession;
-    string crime;
-   public:
-   	void seth(string h);
-   	void setw(string w);
-   	void seta(string a);
-   	void setn(string n);
-   	void setp(string p);
-   	void setc(string c);
-};
-```
+
 
 ### Data Structures and Algorithms
 
